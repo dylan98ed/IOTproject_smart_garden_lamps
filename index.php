@@ -35,21 +35,19 @@
             <br>
 
 
-            <?php //COMINEZA PHP
-                //Insertamos codigo PHP en medio del HTML para mostrar el estado de las lamparas
+            <?php
+                //Estado de las lamparas
                 
                 require_once('connection.php');
                 $conn=new conexion();
 
                 //Hago la consulta para obtener los estados de las lamparas
                 $querySELECT="SELECT`lamparauno`, `lamparados` FROM `estado` WHERE `dispositivo`= 'node1';";
-                //primer parametro la conexion, el segundo la consulta
                 $result= mysqli_query($conn->conectardb(),$querySELECT);
 
-                //Creo una variable $row (fila) en la cual vamos a guardar la fila que nos da como resultado la consulta SELECT
+                //Creo una variable $row (fila) donde se guarda la fila que da como resultado la consulta SELECT
                 $row=mysqli_fetch_row($result);
-                
-                //Con el estado de lampara1 $row[0] armo una estructura if - else if - else para los distintos mensajes
+
                 if(($row[0]==1)&&($row[1]==1)){
                     echo "La lámpara 1 se encuentra ENCENDIDA";
                     echo "<br>";
@@ -86,9 +84,6 @@
                     echo "Valor invalido para la lámpara 1 y lámpara 2";
                     echo "<br>";
                 }
-                
-                
-                //TERMINA PHP
             ?>
             
         </div>
