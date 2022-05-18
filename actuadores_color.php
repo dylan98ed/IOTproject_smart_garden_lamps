@@ -11,14 +11,14 @@
         <h1>Control de Estado de las Lámparas</h1>
         <h2>Quiroga Dylan</h2>
         
-        <img src="/iluminacion-jardin-local/img/luz.jpg">
+        <img src="/iluminacion-jardin-local/IOTproject_smart_garden_lamps/img/luz.jpg">
         
         <div id = "frame"> 
             <h1>LÁMPARA 1</h1>
         
-            <button class = "button-off" type='button' onClick=location.href='/iluminacion-jardin-local/lampara1.php?dispositivo=node1&lamparauno=0'><h2>Apagar</h2>
+            <button class = "button-off" type='button' onClick=location.href='/iluminacion-jardin-local/IOTproject_smart_garden_lamps/lampara1.php?dispositivo=node1&lamparauno=0'><h2>Apagar</h2>
             </button>
-            <button class = "button-on" type='button' onClick=location.href='/iluminacion-jardin-local/lampara1.php?dispositivo=node1&lamparauno=1'><h2>Encender</h2>
+            <button class = "button-on" type='button' onClick=location.href='/iluminacion-jardin-local/IOTproject_smart_garden_lamps/lampara1.php?dispositivo=node1&lamparauno=1'><h2>Encender</h2>
             </button>
             <br>
             <br>
@@ -26,10 +26,10 @@
             <h1>LÁMPARA 2</h1>
         
             <button style='background-color:red;  color:white; border-radius: 10px; border-color: rgb(255, 0, 0);' 
-                type='button' onClick=location.href='/iluminacion-jardin-local/lampara2.php?dispositivo=node1&lamparados=0'><h2>Apagar</h2>
+                type='button' onClick=location.href='/iluminacion-jardin-local/IOTproject_smart_garden_lamps/lampara2.php?dispositivo=node1&lamparados=0'><h2>Apagar</h2>
             </button>
             <button style='background-color:rgb(94, 255, 0); color:white; border-radius: 10px; border-color: rgb(25, 255, 4);' 
-                type='button' onClick=location.href='/iluminacion-jardin-local/lampara2.php?dispositivo=node1&lamparados=1'><h2>Encender</h2>
+                type='button' onClick=location.href='/iluminacion-jardin-local/IOTproject_smart_garden_lamps/lampara2.php?dispositivo=node1&lamparados=1'><h2>Encender</h2>
             </button>
             <br>
             <br>

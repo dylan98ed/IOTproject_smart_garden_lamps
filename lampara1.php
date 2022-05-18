@@ -2,7 +2,7 @@
 //Este archivo solo actualiza el estado de la lampara 1
 
 //Con esta instruccion hago que vuelva a cargar la pagina actuadores_color.php una vez que hace el envio de los datos
-header('Location: /iluminacion-jardin-local/actuadores_color.php');
+header('Location: /iluminacion-jardin-local/IOTproject_smart_garden_lamps/actuadores_color.php');
 
 
 require_once('conexion.php');
