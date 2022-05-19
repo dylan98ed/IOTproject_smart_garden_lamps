@@ -7,36 +7,31 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-    <center>
-        <h1>Control de Estado de las Lámparas</h1>
+<body>
+        <h1>Control de Estado de Lámparas</h1>
         <h2>Quiroga Dylan</h2>
-        
-        <img src="/iluminacion-jardin-local/IOTproject_smart_garden_lamps/img/lamps.jpg">
-        
-        <div id = "frame"> 
+
+        <form action="/iluminacion-jardin-local/IOTproject_smart_garden_lamps/receive.php" method="get">
+
+            <img src="/iluminacion-jardin-local/IOTproject_smart_garden_lamps/img/lamps.jpg">
+
             <h1>LÁMPARA 1</h1>
         
-            <button class = "button-off" type='button' onClick=location.href='/iluminacion-jardin-local/IOTproject_smart_garden_lamps/lamp1.php?dispositivo=node1&lamparauno=0'><h2>Apagar</h2>
-            </button>
-            <button class = "button-on" type='button' onClick=location.href='/iluminacion-jardin-local/IOTproject_smart_garden_lamps/lamp1.php?dispositivo=node1&lamparauno=1'><h2>Encender</h2>
-            </button>
+            <button class = "button-off" type='submit' name="button_l1_off"><h2>Apagar</h2> </button>
+            <button class = "button-on" type='submit' name="button_l1_on"><h2>Encender</h2> </button>
             <br>
             <br>
 
             <h1>LÁMPARA 2</h1>
         
-            <button style='background-color:red;  color:white; border-radius: 10px; border-color: rgb(255, 0, 0);' 
-                type='button' onClick=location.href='/iluminacion-jardin-local/IOTproject_smart_garden_lamps/lamp2.php?dispositivo=node1&lamparados=0'><h2>Apagar</h2>
-            </button>
-            <button style='background-color:rgb(94, 255, 0); color:white; border-radius: 10px; border-color: rgb(25, 255, 4);' 
-                type='button' onClick=location.href='/iluminacion-jardin-local/IOTproject_smart_garden_lamps/lamp2.php?dispositivo=node1&lamparados=1'><h2>Encender</h2>
-            </button>
+            <button class = "button-off" type='submit' name="button_l2_off"><h2>Apagar</h2> </button>
+            <button class = "button-on" type='submit' name="button_l2_on"><h2>Encender</h2> </button>
             <br>
             <br>
 
 
             <?php
-                //Estado de las lamparas
+                //Muestro el estado de las lamparas
                 
                 require_once('connection.php');
                 $conn=new conexion();
@@ -85,8 +80,6 @@
                     echo "<br>";
                 }
             ?>
-            
-        </div>
-    </center>
+        </form>
 </body>
 </html>

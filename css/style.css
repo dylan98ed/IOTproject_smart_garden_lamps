@@ -1,17 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;600&display=swap');
+
+
 body{
-    font-family: Century gothic;
-    width: 800;
+    font-family: Poppins;
+    width: 100%;
+    background-color: burlywood;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 img{
     width: 200px;
     height: 200px;
 }
-#frame{
+form{
     box-shadow: 0px 0px 20px 8px rgba(0,0,0,0.22);
     padding: 20px;
     width: 300px;
     display: inline-block;
     margin: 30px;
+    background-color: cornsilk;
 }
 button{
     color:white;
