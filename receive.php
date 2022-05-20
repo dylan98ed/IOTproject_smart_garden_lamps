@@ -11,36 +11,27 @@ diference($conn);
 
 function diference($conn){
     $dispositivo='node1';
+    $row=readSQL($conn);
+    $lamp1=$row[0];
+    $lamp2=$row[1];
     if(isset($_GET['button_l1_on'])){
-        $row=readSQL($conn);
         $lamp1='1';
-        $lamp2=$row[1];
-        $dispositivo='node1';
         updateLamp1($conn, $lamp1, $dispositivo);
         insertHistorical($conn, $lamp1, $lamp2, $dispositivo);
     }
     if(isset($_GET['button_l1_off'])){
-        $row=readSQL($conn);
         $lamp1='0';
-        $lamp2=$row[1];
-        $dispositivo='node1';
         updateLamp1($conn, $lamp1, $dispositivo);
         insertHistorical($conn, $lamp1, $lamp2, $dispositivo);
     }
 
     if(isset($_GET['button_l2_on'])){
-        $row=readSQL($conn);
-        $lamp1=$row[0];
         $lamp2='1';
-        $dispositivo='node1';
         updateLamp2($conn, $lamp2, $dispositivo);
         insertHistorical($conn, $lamp1, $lamp2, $dispositivo);
     }
     if(isset($_GET['button_l2_off'])){
-        $row=readSQL($conn);
-        $lamp1=$row[0];
         $lamp2='0';
-        $dispositivo='node1';
         updateLamp2($conn, $lamp2, $dispositivo);
         insertHistorical($conn, $lamp1, $lamp2, $dispositivo);
     }
